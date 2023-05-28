@@ -1,0 +1,84 @@
+<!-- 
+    <?php
+    $con = $mysqli_connect("localhost", "root", "", "hurtownia");
+
+    $sql1 = "SELECT klienci.imie, klienci.zdjecie, opinie.opinia FROM `klienci` INNER JOIN opinie ON klienci.id = opinie.Klienci_id WHERE klienci.Typy_id = '2' OR klienci.Typy_id = '3'";
+
+    $sql2 = "SELECT imie, nazwisko, punkty FROM `klienci` ORDER BY punkty DESC LIMIT 3";
+
+    $query1 = mysqli($con, $sql1);
+
+    $query2 = mysqli($con, $sql2);
+
+    $res1 = "";
+    $res2 = "";
+
+    while($row = mysqli_fetch_row($query1)){
+        $res1 = 
+            <div class=skrypt1>
+                <img src='"'.$row[1].'"' alt="klient"/>
+                <p>.$row[3].</p>
+                <span text-align: right;>.$row[0].</span>
+            </div>;
+    }
+
+    while($row = mysqli_fetch_row($query2)){
+        $res2 = 
+                <li>.$row[0]. .$row[1]., .$row[2].</li>
+    }
+        
+    $mysqli_close($con);
+    ?>
+ -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinie klientów</title>
+    <link rel="stylesheet" href="./styl3.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hurtownia spożywcza</h1>
+        </header>
+        <main>
+            <h2>Opinie naszych klientów</h2>
+            <!-- skrypt 1 -->
+            <!-- 
+                <?=
+                
+                $res1;
+
+                ?>
+            -->
+        </main>
+        <footer>
+            <small class="one">
+                <h3>Współpracuj z nami</h3>
+            </small>
+            <small class="two">
+                <h3>Nasi top klienci</h3>
+                <!-- skrypt 2 -->
+                <!-- 
+                    <?=
+
+                        $res2;
+
+                    ?>
+                -->
+            </small>
+            <small class="three">
+                <h3>Skontaktuj się</h3>
+                <p>telefon: 111222333</p>
+            </small>
+            <small class="four">
+                <h3>Autor: <i>Maciej Ormian</i></h3>
+            </small>
+        </footer>
+    </div>
+</body>
+</html>

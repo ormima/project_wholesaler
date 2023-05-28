@@ -1,0 +1,79 @@
+* {
+    font-family: Tahoma, sans-serif;
+    
+}
+
+.baner {
+    background-color: Tomato;
+    color: white;
+    padding: 10px;
+}
+
+.opinia{
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.fotka{
+    display: block;
+}
+
+.glowny {
+    background-color: Seashell;
+    height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: Tomato;
+    color: white;
+    width: 25%;
+    height: 160px;
+    float: left;
+}
+
+li {
+    background-color: white;
+    color: dimgray;
+    width: 60%;
+    height: 220px;
+    margin-top: 40px;
+    margin-bottom: 40;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* CIEN TUTAJ rozmyte 10px, rozmiar 5px color dimgray */
+}
+
+img {
+    float: right;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+blockquote {
+    padding: 10px;
+    font-size: 150%;
+    font-style: italic;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: right;
+    margin-right: 40px;
+    font-size: 150%;
+    font-style: italic;
+}
+
+a {
+    color: white;
+}
